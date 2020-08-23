@@ -1,0 +1,32 @@
+<suite name="TestNG Group tests positive" verbose="1">
+    <test name="AvicTests">
+        <classes>
+            <class name="tests.SearchTests">
+                <methods>
+                    <include name="checkThatUrlContainsSearchWord"/>
+                    <include name="checkElementsAmountOnSearchPage"/>
+                    <include name="checkListItemsMagnificationOnPage"/>
+                </methods>
+            </class>
+            <class name="tests.FilterTests">
+                <methods>
+                    <include name="checkFilterByLowestPrice"/>
+                    <include name="checkIfElementsPriceInRangeOfFilteredPrice"/>
+                </methods>
+            </class>
+            <class name="tests.AddToCardTests">
+                <methods>
+                    <include name="checkAddToCard"/>
+                    <include name="checkRemoveElementFromCart"/>
+                    <include name="checkChangePriceItemIfChangedCountForCurrentItem"/>
+                </methods>
+            </class>
+            <class name="tests.ChangeLanguageTest">
+                <methods>
+                    <include name="checkChangeLanguage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

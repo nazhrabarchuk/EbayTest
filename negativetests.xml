@@ -1,0 +1,11 @@
+<suite name="TestNG Group tests negative" verbose="1">
+    <test name="FilterTests">
+        <classes>
+            <class name="tests.FilterTests">
+                <methods>
+                    <include name="checkFilterRangePriceFailsIfEnteredNegativeNumber"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
